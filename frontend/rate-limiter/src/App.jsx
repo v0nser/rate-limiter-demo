@@ -13,7 +13,7 @@ function App() {
 
   const fetchData = async () => {
     try {
-      const response = await axios.get("http://localhost:5000/api");
+      const response = await axios.get("https://rate-limiter-demo.onrender.com/api");
       setMessage(response.data.message);
       setRequestCount(prev => prev + 1);
       setRemainingRequests(maxRequests - (requestCount + 1));
