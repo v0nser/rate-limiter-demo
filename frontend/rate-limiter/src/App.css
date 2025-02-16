@@ -1,0 +1,92 @@
+/* App.css */
+body {
+  font-family: "Arial", sans-serif;
+  margin: 0;
+  padding: 0;
+  transition: background 0.3s ease, color 0.3s ease;
+}
+
+.app {
+  text-align: center;
+  padding: 20px;
+  min-height: 100vh;
+  transition: background 0.3s ease;
+}
+
+/* Light Mode */
+.light {
+  background: #f5f5f5;
+  color: #333;
+}
+
+/* Dark Mode */
+.dark {
+  background: #222;
+  color: #fff;
+}
+
+/* Button */
+button {
+  background: #007bff;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  margin-top: 20px;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+button:hover {
+  background: #0056b3;
+}
+
+button:disabled {
+  background: gray;
+  cursor: not-allowed;
+}
+
+/* Dark mode button */
+.dark-mode-toggle {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  padding: 10px;
+  border: none;
+  cursor: pointer;
+  background: #444;
+  color: white;
+  border-radius: 50%;
+}
+
+/* Chart container */
+.chart-container {
+  width: 100%;
+  max-width: 600px;
+  margin: 30px auto;
+}
+
+/* Progress bar */
+.progress-container {
+  width: 100%;
+  max-width: 600px;
+  background: #ddd;
+  border-radius: 10px;
+  overflow: hidden;
+  height: 20px;
+  margin: 20px auto;
+}
+
+.progress-bar {
+  height: 100%;
+  transition: width 0.3s ease-in-out;
+}
+
+.green {
+  background: #28a745;
+}
+
+.red {
+  background: red;
+}
